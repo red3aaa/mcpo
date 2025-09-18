@@ -30,4 +30,4 @@ USER mcp
 
 EXPOSE 8000
 
-ENTRYPOINT ["/app/entrypoint.sh"]
+CMD ["sh", "-c", "echo \"$MCPO_CONFIG_JSON\" > /app/config.json && mcpo --config /app/config.json"]
