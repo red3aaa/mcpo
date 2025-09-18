@@ -27,4 +27,4 @@ USER mcp
 
 EXPOSE 8000
 
-CMD ["sh", "-c", "echo \"$MCPO_CONFIG_JSON\" > /app/config.json && mcpo --config /app/config.json"]
+CMD ["sh", "-c", "echo \"$MCPO_CONFIG_JSON\" > /app/config.json && mcpo --config /app/config.json --api-key $API_KEY"]
